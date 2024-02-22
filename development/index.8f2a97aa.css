@@ -1,0 +1,41 @@
+.book-list {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  display: flex;
+}
+
+.book-list .container {
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid #44a1b3;
+  border-radius: 5px;
+  flex-direction: column;
+  flex: 0 calc(20% - 20px);
+  align-items: center;
+  padding: 10px;
+  display: flex;
+}
+
+.book-list .container h2, .book-list .container h4, .book-list .container h1 {
+  margin: 5px 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+@media (width <= 768px) {
+  .book-list .container {
+    flex: 0 30%;
+  }
+}
+
+@media (width <= 480px) {
+  .book-list .container {
+    flex: 0 45%;
+  }
+}
+
+/*# sourceMappingURL=index.8f2a97aa.css.map */
