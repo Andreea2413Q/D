@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./styles/header.scss">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 
-    <script src="./scripts/script.js" ></script>
+    <script type="module" src="./scripts/script.js" ></script>
     <script src="./scripts/filter.js"></script>
     <script src="./scripts/sort.js"></script>
 </head>
@@ -16,11 +16,12 @@
 <header>
     <div class="header-container">
         <h1 id="title" style="margin-left:5%;">Book Market</h1>
-        <div class="sort">
-            <button id="sort-price-asc" class="sort">Sort by Price Ascending</button>
-            <button id="sort-price-desc" class="sort">Sort by Price Descending</button>
-            <button id="sort-name-asc" class="sort">Sort by Name A-Z</button>
-            <button id="sort-name-desc" class="sort">Sort by Name Z-A</button>
+        <input id="search-input" type="text" placeholder="Search for name...">
+        <div class="sortt">
+            <button id="sort-price-asc" class="sort">Sort all by Price Ascending</button>
+            <button id="sort-price-desc" class="sort">Sort all  by Price Descending</button>
+            <button id="sort-name-asc" class="sort">Sort all by Name A-Z</button>
+            <button id="sort-name-desc" class="sort">Sort all by Name Z-A</button>
         </div>
     </div>
     
@@ -29,19 +30,26 @@
 
 <div class="layout-container">
     <div class="sidebar">
+       
         <button id="home">Home</button>
         <button id="filtre">Filter</button>
-    
+
+        <button id="cart">Cos</button>
+        <div id="cart-items" class="cart-items">
+            <div id="cart-content"></div>
+
+        </div>
+
         <div id="filter-menu" class="filter-menu hidden">
-            <button data-category="fantasy">Fantasy</button>
-            <button data-category="fiction">Fiction</button>
-            <button data-category="non-fiction">Non-Fiction</button>
-            <button data-category="horror">Horror</button>
-            <button data-category="historical fiction">Historical Fiction</button>
+            <button data-category="fantasy" class="category">Fantasy</button>
+            <button data-category="fiction" class="category">Fiction</button>
+            <button data-category="non-fiction" class="category">Non-Fiction</button>
+            <button data-category="horror" class="category">Horror</button>
+            <button data-category="historical fiction" class="category">Historical Fiction</button>
         </div>
 
       
-       
+        
 
     </div>
    

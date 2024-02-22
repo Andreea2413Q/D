@@ -1,5 +1,5 @@
 body {
-  background-color: #675562;
+  background-color: #8c8787;
 }
 
 .icon-container {
@@ -59,21 +59,22 @@ body {
 }
 
 button {
+  cursor: none;
   cursor: pointer;
   background: #9cc0c7;
   border: 2.5px solid #000;
   border-radius: 10px;
   width: 160px;
   padding: 10px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Kode Mono, monospace;
   font-size: 20px;
   font-weight: bold;
-  transition: all .6s;
-  box-shadow: 2px 2px 5px #e4e4eb, 3px 3px #000;
+  transition: all .8s;
+  box-shadow: 2px 2px 5px #4a4a98, 3px 3px #000;
 }
 
 button:hover {
-  text-shadow: 2px 2px #fff;
+  color: #2317d0;
   border: 2.5px solid #fff;
   box-shadow: 2px 2px 5px #e4e4eb;
 }
@@ -95,7 +96,6 @@ button:hover {
 }
 
 .header-container {
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
@@ -109,10 +109,25 @@ button:hover {
   display: flex;
 }
 
-.sort {
+.sortt, .sort {
   gap: 30px;
   font-size: 15px;
   display: flex;
+}
+
+.header-container h1 {
+  flex-grow: 1;
+  margin-left: 5%;
+}
+
+#search-input {
+  border: 2px solid #00f;
+  border-radius: 10px;
+  flex-grow: 2;
+  width: 15%;
+  height: 40px;
+  padding: 0 8px;
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=index.fa99d8e4.css.map */

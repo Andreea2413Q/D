@@ -242,5 +242,48 @@ function sortBooks(criteria) {
     }
     displayBooks(sortedBooks);
 }
+document.addEventListener("DOMContentLoaded", function() {
+    const homeButton = document.getElementById("home");
+    const filterButtons = document.querySelectorAll("#filter-menu button");
+    const sortButtons = document.querySelectorAll(".sort");
+    const filtre = document.querySelector("#filtre");
+    // Afișează toate cărțile și evidențiază butonul "Home"
+    homeButton.addEventListener("click", function() {
+        displayBooks(books);
+        // Resetăm doar evidențierea butoanelor de filtru și sortare
+        filterButtons.forEach((button)=>button.classList.remove("button-active"));
+        sortButtons.forEach((button)=>button.classList.remove("button-active"));
+        // Evidențiem butonul "Home"
+        homeButton.classList.add("button-active");
+    });
+    filtre.addEventListener("click", function() {
+        displayBooks(books);
+        homeButton.filterButtons.forEach((button)=>button.classList.remove("button-active"));
+        sortButtons.forEach((button)=>button.classList.remove("button-active"));
+        filtre.classList.add("button-active");
+    });
+    // Gestionează filtrarea cărților și evidențiază butonul de filtrare selectat
+    filterButtons.forEach((button)=>{
+        button.addEventListener("click", function() {
+            const category = this.getAttribute("data-category");
+            const filteredBooks = books.filter((book)=>book.category.toLowerCase() === category.toLowerCase());
+            displayBooks(filteredBooks);
+            // Resetăm și evidențiem doar butoanele de filtru
+            filterButtons.forEach((btn)=>btn.classList.remove("button-active"));
+            this.classList.add("button-active");
+            // Resetăm evidențierea butonului "Home"
+            homeButton.classList.remove("button-active");
+        });
+    });
+    // Gestionează sortarea cărților fără a afecta evidențierea butoanelor de filtru sau "Home"
+    sortButtons.forEach((button)=>{
+        button.addEventListener("click", function() {
+            // Evidențiem doar butonul de sortare apăsat
+            sortButtons.forEach((btn)=>btn.classList.remove("button-active"));
+            this.classList.add("button-active");
+        });
+    });
+// Funcția displayBooks și alte funcții de sortare/filtrare necesare...
+});
 
 //# sourceMappingURL=index.1e5b42f3.js.map

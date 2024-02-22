@@ -1,3 +1,5 @@
+@import "https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Sanchez:ital@0;1&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sanchez:ital@0;1&display=swap";
 .book-list {
   flex-wrap: wrap;
   justify-content: center;
@@ -8,8 +10,8 @@
 .book-list .container {
   text-align: center;
   cursor: pointer;
-  border: 2px solid #44a1b3;
-  border-radius: 5px;
+  border: 2px solid #27276c;
+  border-radius: 10px;
   flex-direction: column;
   flex: 0 calc(20% - 20px);
   align-items: center;
@@ -21,9 +23,12 @@
   margin: 5px 0;
 }
 
-h1 {
-  text-align: center;
-  margin: 1.5rem 0;
+h4, h1 {
+  font-family: Kode Mono, Sanchez, sans-serif;
+}
+
+h2 {
+  font-family: Kode Mono, Merriweather, Sanchez, sans-serif;
 }
 
 @media (width <= 768px) {
@@ -36,6 +41,26 @@ h1 {
   .book-list .container {
     flex: 0 45%;
   }
+}
+
+.button-active {
+  color: #00f;
+  border: 2.5px solid #00f;
+  box-shadow: 2px 2px 5px #e4e4eb;
+}
+
+#cart {
+  text-align: center;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  font-size: 26px;
+}
+
+#cart-content {
+  font-size: 22px;
 }
 
 /*# sourceMappingURL=index.8f2a97aa.css.map */

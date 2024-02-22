@@ -1,5 +1,5 @@
 body {
-  background-color: #675562;
+  background-color: #8c8787;
 }
 
 .icon-container {
@@ -51,23 +51,25 @@ body {
 }
 
 button {
+  cursor:none;
   width: 160px;
   border: 2.5px solid black;
-  box-shadow: 2px 2px 5px rgb(228, 228, 235), 3px 3px black;
+  box-shadow: 2px 2px 5px rgb(74, 74, 152), 3px 3px black;
   border-radius: 10px;
-  cursor: pointer;
   background: rgb(156, 192, 199);
-  transition: all 0.6s;
+  transition: all 0.8s;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
   padding:10px 10px;
+  cursor:pointer;
+  font-family: 'Kode Mono', monospace;
 }
 
 button:hover {
   box-shadow: 2px 2px 5px rgb(228, 228, 235);
   border: 2.5px solid white;
-  text-shadow:2px 2px white;
+  color:rgb(35, 23, 208);
 }
 
 
@@ -91,7 +93,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: space-between; 
-  flex-wrap: wrap; 
+ // flex-wrap: wrap; 
   padding: 10px; 
   gap:20px;
 
@@ -103,9 +105,25 @@ button:hover {
 
 }
 
-.sort{
+.sortt,.sort{
 
   display:flex;
   gap: 30px; 
   font-size:15px;
+}
+
+
+.header-container h1 {
+  margin-left: 5%;
+  flex-grow: 1;
+}
+
+#search-input {
+  height:40px;
+  border:2px solid blue;
+  border-radius:10px;
+  width:15%;
+  flex-grow: 2;
+  padding:0 8px;
+  font-size:24px;
 }

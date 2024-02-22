@@ -580,412 +580,714 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"3LleC":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "books", ()=>books);
+var _tltJpg = require("../multimedia/TLT.jpg");
+var _tltJpgDefault = parcelHelpers.interopDefault(_tltJpg);
+var _tlhJpg = require("../multimedia/TLH.jpg");
+var _tlhJpgDefault = parcelHelpers.interopDefault(_tlhJpg);
+var _tsomJpg = require("../multimedia/TSOM.jpg");
+var _tsomJpgDefault = parcelHelpers.interopDefault(_tsomJpg);
+var _ttcJpg = require("../multimedia/TTC.jpg");
+var _ttcJpgDefault = parcelHelpers.interopDefault(_ttcJpg);
+var _tbotlJpg = require("../multimedia/TBOTL.jpg");
+var _tbotlJpgDefault = parcelHelpers.interopDefault(_tbotlJpg);
+var _tloJpg = require("../multimedia/TLO.jpg");
+var _tloJpgDefault = parcelHelpers.interopDefault(_tloJpg);
+var _1984Jpg = require("../multimedia/1984.jpg");
+var _1984JpgDefault = parcelHelpers.interopDefault(_1984Jpg);
+var _tkamJpg = require("../multimedia/TKAM.jpg");
+var _tkamJpgDefault = parcelHelpers.interopDefault(_tkamJpg);
+var _tsonJpg = require("../multimedia/TSON.jpg");
+var _tsonJpgDefault = parcelHelpers.interopDefault(_tsonJpg);
+var _tmoaJpg = require("../multimedia/TMOA.jpg");
+var _tmoaJpgDefault = parcelHelpers.interopDefault(_tmoaJpg);
+var _thohJpg = require("../multimedia/THOH.jpg");
+var _thohJpgDefault = parcelHelpers.interopDefault(_thohJpg);
+var _tggJpg = require("../multimedia/TGG.jpg");
+var _tggJpgDefault = parcelHelpers.interopDefault(_tggJpg);
+var _c22Jpg = require("../multimedia/C22.jpg");
+var _c22JpgDefault = parcelHelpers.interopDefault(_c22Jpg);
+var _tcitrJpg = require("../multimedia/TCITR.jpg");
+var _tcitrJpgDefault = parcelHelpers.interopDefault(_tcitrJpg);
+var _bnnJpg = require("../multimedia/BNN.jpg");
+var _bnnJpgDefault = parcelHelpers.interopDefault(_bnnJpg);
+var _papJpg = require("../multimedia/PAP.jpg");
+var _papJpgDefault = parcelHelpers.interopDefault(_papJpg);
+var _tlotrJpg = require("../multimedia/TLOTR.jpg");
+var _tlotrJpgDefault = parcelHelpers.interopDefault(_tlotrJpg);
+var _bJpg = require("../multimedia/B.jpg");
+var _bJpgDefault = parcelHelpers.interopDefault(_bJpg);
+var _sJpg = require("../multimedia/S.jpg");
+var _sJpgDefault = parcelHelpers.interopDefault(_sJpg);
+var _jeJpg = require("../multimedia/JE.jpg");
+var _jeJpgDefault = parcelHelpers.interopDefault(_jeJpg);
+var _tdoafJpg = require("../multimedia/TDOAF.jpg");
+var _tdoafJpgDefault = parcelHelpers.interopDefault(_tdoafJpg);
+var _icbJpg = require("../multimedia/ICB.jpg");
+var _icbJpgDefault = parcelHelpers.interopDefault(_icbJpg);
+var _beJpg = require("../multimedia/BE.jpg");
+var _beJpgDefault = parcelHelpers.interopDefault(_beJpg);
+var _eJpg = require("../multimedia/E.jpg");
+var _eJpgDefault = parcelHelpers.interopDefault(_eJpg);
+var _itJpg = require("../multimedia/IT.jpg");
+var _itJpgDefault = parcelHelpers.interopDefault(_itJpg);
+var _dJpg = require("../multimedia/D.jpg");
+var _dJpgDefault = parcelHelpers.interopDefault(_dJpg);
+var _exJpg = require("../multimedia/EX.jpg");
+var _exJpgDefault = parcelHelpers.interopDefault(_exJpg);
+var _fJpg = require("../multimedia/F.jpg");
+var _fJpgDefault = parcelHelpers.interopDefault(_fJpg);
+var _pJpg = require("../multimedia/P.jpg");
+var _pJpgDefault = parcelHelpers.interopDefault(_pJpg);
+var _hJpg = require("../multimedia/H.jpg");
+var _hJpgDefault = parcelHelpers.interopDefault(_hJpg);
+var _bookJpg = require("../multimedia/BOOK.jpg");
+var _bookJpgDefault = parcelHelpers.interopDefault(_bookJpg);
+var _atlwcsJpg = require("../multimedia/ATLWCS.jpg");
+var _atlwcsJpgDefault = parcelHelpers.interopDefault(_atlwcsJpg);
+var _nJpg = require("../multimedia/N.jpg");
+var _nJpgDefault = parcelHelpers.interopDefault(_nJpg);
+var _whJpg = require("../multimedia/WH.jpg");
+var _whJpgDefault = parcelHelpers.interopDefault(_whJpg);
+var _tpoteJpg = require("../multimedia/TPOTE.jpg");
+var _tpoteJpgDefault = parcelHelpers.interopDefault(_tpoteJpg);
+var _oJpg = require("../multimedia/O.jpg");
+var _oJpgDefault = parcelHelpers.interopDefault(_oJpg);
+var _gwtwJpg = require("../multimedia/GWTW.jpg");
+var _gwtwJpgDefault = parcelHelpers.interopDefault(_gwtwJpg);
+var _shJpg = require("../multimedia/SH.jpg");
+var _shJpgDefault = parcelHelpers.interopDefault(_shJpg);
+var cart = [];
+var cartPrice = 0;
+var isCartVisible = false;
 const books = [
     {
-        series: "Percy Jackson and The Olympians",
         name: "The Lightning Thief",
-        price: 20,
+        series: "Percy Jackson and The Olympians",
         category: "fantasy",
-        src: "./multimedia/TLT.jpg"
+        price: 20,
+        src: (0, _tltJpgDefault.default)
     },
     {
-        series: "Percy Jackson and The Olympians",
         name: "The Sea of Monster",
-        price: 20,
+        series: "Percy Jackson and The Olympians",
         category: "fantasy",
-        src: "./multimedia/TSOM.jpg"
+        price: 20,
+        src: (0, _tsomJpgDefault.default)
     },
     {
-        series: "Percy Jackson and The Olympians",
         name: "The Titan Curse",
-        price: 22,
+        series: "Percy Jackson and The Olympians",
         category: "fantasy",
-        src: "./multimedia/TTC.jpg"
+        price: 22,
+        src: (0, _ttcJpgDefault.default)
     },
     {
-        series: "Percy Jackson and The Olympians",
         name: "Battle of The Labirinth",
-        price: 25,
-        category: "fantasy",
-        src: "./multimedia/TBOTL.jpg"
-    },
-    {
         series: "Percy Jackson and The Olympians",
+        category: "fantasy",
+        price: 25,
+        src: (0, _tbotlJpgDefault.default)
+    },
+    {
         name: "The Last Olimpyan",
-        price: 25,
+        series: "Percy Jackson and The Olympians",
         category: "fantasy",
-        src: "./multimedia/TLO.jpg"
+        price: 25,
+        src: (0, _tloJpgDefault.default)
     },
     {
-        series: "Heroes Of Olympus",
         name: "The Lost Hero",
-        price: 18,
+        series: "Heroes Of Olympus",
         category: "fantasy",
-        src: "./multimedia/TLH.jpg"
+        price: 18,
+        src: (0, _tlhJpgDefault.default)
     },
     {
-        series: "Heroes Of Olympus",
         name: "The Son of Neptune",
-        price: 20,
+        series: "Heroes Of Olympus",
         category: "fantasy",
-        src: "./multimedia/TSON.jpg"
+        price: 20,
+        src: (0, _tsonJpgDefault.default)
     },
     {
-        series: "Heroes Of Olympus",
         name: "The Mark of Athena",
-        price: 20,
+        series: "Heroes Of Olympus",
         category: "fantasy",
-        src: "./multimedia/TMOA.jpg"
+        price: 20,
+        src: (0, _tmoaJpgDefault.default)
     },
     {
-        series: "Heroes Of Olympus",
         name: "The House of Hades",
-        price: 22,
-        category: "fantasy",
-        src: "./multimedia/THOH.jpg"
-    },
-    {
         series: "Heroes Of Olympus",
-        name: "Blood of Olympus",
-        price: 25,
         category: "fantasy",
-        src: "./multimedia/TBOL.jpg"
+        price: 22,
+        src: (0, _thohJpgDefault.default)
     },
     {
-        series: "N/A",
+        name: "Blood of Olympus",
+        series: "Heroes Of Olympus",
+        category: "fantasy",
+        price: 25,
+        src: (0, _tbotlJpgDefault.default)
+    },
+    {
         name: "1984",
-        price: 15,
+        series: "",
         category: "fiction",
-        src: "./multimedia/1984.jpg"
+        price: 15,
+        src: (0, _1984JpgDefault.default)
     },
     {
-        series: "N/A",
         name: "To Kill a Mockingbird",
-        price: 18,
+        series: "",
         category: "fiction",
-        src: "./multimedia/TKAM.jpg"
+        price: 18,
+        src: (0, _tkamJpgDefault.default)
     },
     {
-        series: "N/A",
         name: "The Great Gatsby",
-        price: 20,
+        series: "",
         category: "fiction",
-        src: "./multimedia/TGG.jpg"
+        price: 20,
+        src: (0, _tggJpgDefault.default)
     },
     {
-        series: "N/A",
         name: "Catch-22",
-        price: 22,
+        series: "",
         category: "fiction",
-        src: "./multimedia/C22.jpg"
+        price: 22,
+        src: (0, _c22JpgDefault.default)
     },
     {
-        series: "N/A",
         name: "The Catcher in the Rye",
-        price: 17,
+        series: "",
         category: "fiction",
-        src: "./multimedia/TCITR.jpg"
+        price: 17,
+        src: (0, _tcitrJpgDefault.default)
     },
     {
-        series: "N/A",
         name: "Brave New World",
+        series: "",
+        category: "fiction",
         price: 19,
-        category: "fiction",
-        src: "./multimedia/BNN.jpg"
+        src: (0, _bnnJpgDefault.default)
     },
     {
-        series: "N/A",
         name: "The Lord of the Rings",
+        series: "",
+        category: "fiction",
         price: 35,
-        category: "fiction",
-        src: "./multimedia/TLOTR.jpg"
+        src: (0, _tlotrJpgDefault.default)
     },
     {
-        series: "N/A",
         name: "Pride and Prejudice",
-        price: 16,
+        series: "",
         category: "fiction",
-        src: "./multimedia/PAP.jpg"
+        price: 16,
+        src: (0, _papJpgDefault.default)
     },
     {
-        series: "N/A",
         name: "Beloved",
-        price: 18,
+        series: "",
         category: "fiction",
-        src: "./multimedia/B.jpg"
+        price: 18,
+        src: (0, _bJpgDefault.default)
     },
     {
-        series: "N/A",
         name: "Jane Eyre",
-        price: 20,
+        series: "",
         category: "fiction",
-        src: "./multimedia/JE.jpg"
+        price: 20,
+        src: (0, _jeJpgDefault.default)
     },
     {
-        series: "N/A",
         name: "Sapiens: A Brief History of Humankind",
-        price: 25,
+        series: "",
         category: "non-fiction",
-        src: "./multimedia/S.jpg"
+        price: 25,
+        src: (0, _sJpgDefault.default)
     },
     {
-        series: "N/A",
         name: "Educated",
-        price: 28,
+        series: "",
         category: "non-fiction",
-        src: "./multimedia/E.jpg"
+        price: 28,
+        src: (0, _eJpgDefault.default)
     },
     {
-        series: "N/A",
         name: "The Diary of Anne Frank",
+        series: "",
+        category: "non-fiction",
         price: 15,
-        category: "non-fiction",
-        src: "./multimedia/TDOAF.jpg"
+        src: (0, _tdoafJpgDefault.default)
     },
     {
-        series: "N/A",
         name: "Becoming",
-        price: 30,
+        series: "",
         category: "non-fiction",
-        src: "./multimedia/BE.jpg"
+        price: 30,
+        src: (0, _beJpgDefault.default)
     },
     {
-        series: "N/A",
         name: "In Cold Blood",
+        series: "",
+        category: "non-fiction",
         price: 20,
-        category: "non-fiction",
-        src: "./multimedia/ICB.jpg"
+        src: (0, _icbJpgDefault.default)
     },
     {
-        series: "N/A",
-        name: "The Wright Brothers",
-        price: 22,
-        category: "non-fiction",
-        src: "./multimedia/TWB.jpg"
-    },
-    {
-        series: "N/A",
-        name: "The Immortal Life of Henrietta Lacks",
-        price: 18,
-        category: "non-fiction",
-        src: "./multimedia/TILOHL.jpg"
-    },
-    {
-        series: "N/A",
-        name: "Into the Wild",
-        price: 17,
-        category: "non-fiction",
-        src: "./multimedia/ITW.jpg"
-    },
-    {
-        series: "N/A",
-        name: "Silent Spring",
-        price: 16,
-        category: "non-fiction",
-        src: "./multimedia/SS.jpg"
-    },
-    {
-        series: "N/A",
-        name: "The Soul of A New Machine",
-        price: 24,
-        category: "non-fiction",
-        src: "./multimedia/TSOANM.jpg"
-    },
-    {
-        series: "N/A",
         name: "The Shining",
-        price: 25,
+        series: "",
         category: "horror",
-        src: "./multimedia/TS.jpg"
+        price: 15,
+        src: (0, _shJpgDefault.default)
     },
     {
-        series: "N/A",
         name: "It",
-        price: 30,
+        series: "",
         category: "horror",
-        src: "./multimedia/IT.jpg"
+        price: 18,
+        src: (0, _itJpgDefault.default)
     },
     {
-        series: "N/A",
         name: "Dracula",
-        price: 18,
+        series: "",
         category: "horror",
-        src: "./multimedia/D.jpg"
+        price: 12,
+        src: (0, _dJpgDefault.default)
     },
     {
-        series: "N/A",
-        name: "Frankenstein",
-        price: 16,
-        category: "horror",
-        src: "./multimedia/F.jpg"
-    },
-    {
-        series: "N/A",
-        name: "The Haunting of Hill House",
-        price: 22,
-        category: "horror"
-    },
-    {
-        series: "N/A",
-        name: "Pet Sematary",
-        price: 20,
-        category: "horror",
-        src: "./multimedia/PS.jpg"
-    },
-    {
-        series: "N/A",
         name: "The Exorcist",
-        price: 25,
+        series: "",
         category: "horror",
-        src: "./multimedia/TE.jpg"
+        price: 14,
+        src: (0, _eJpgDefault.default)
     },
     {
-        series: "N/A",
-        name: "The Silence of the Lambs",
-        price: 21,
+        name: "Frankenstein",
+        series: "",
         category: "horror",
-        src: "./multimedia/TSOTL.jpg"
+        price: 11,
+        src: (0, _fJpgDefault.default)
     },
     {
-        series: "N/A",
-        name: "Bird Box",
-        price: 18,
+        name: "Pet Sematary",
+        series: "",
         category: "horror",
-        src: "./multimedia/BB.jpg"
+        price: 13,
+        src: (0, _pJpgDefault.default)
     },
     {
-        series: "N/A",
-        name: "Hell House",
-        price: 20,
+        name: "The Haunting of Hill House",
+        series: "",
         category: "horror",
-        src: "./multimedia/HH.jpg"
+        price: 16,
+        src: (0, _hJpgDefault.default)
     },
     {
-        series: "N/A",
-        name: "The Pillars of the Earth",
-        price: 24,
-        category: "historical fiction",
-        src: "./multimedia/TPOTE.jpg"
-    },
-    {
-        series: "N/A",
-        name: "Wolf Hall",
-        price: 26,
-        category: "historical fiction",
-        src: "./multimedia/WH.jpg"
-    },
-    {
-        series: "N/A",
         name: "The Book Thief",
-        price: 20,
+        series: "",
         category: "historical fiction",
-        src: "./multimedia/TBT.jpg"
+        price: 14,
+        src: (0, _bookJpgDefault.default)
     },
     {
-        series: "N/A",
         name: "All the Light We Cannot See",
-        price: 22,
+        series: "",
         category: "historical fiction",
-        src: "./multimedia/ATLWCS.jpg"
+        price: 17,
+        src: (0, _atlwcsJpgDefault.default)
     },
     {
-        series: "N/A",
-        name: "War and Peace",
-        price: 30,
-        category: "historical fiction",
-        src: "./multimedia/WAP.jpg"
-    },
-    {
-        series: "N/A",
-        name: "Gone with the Wind",
-        price: 25,
-        category: "historical fiction",
-        src: "./multimedia/GWTW.jpg"
-    },
-    {
-        series: "N/A",
         name: "The Nightingale",
-        price: 21,
+        series: "",
         category: "historical fiction",
-        src: "./multimedia/TN.jpg"
+        price: 16,
+        src: (0, _nJpgDefault.default)
     },
     {
-        series: "N/A",
-        name: "A Tale of Two Cities",
+        name: "Wolf Hall",
+        series: "",
+        category: "historical fiction",
         price: 18,
-        category: "historical fiction",
-        src: "./multimedia/ATOTC.jpg"
+        src: (0, _whJpgDefault.default)
     },
     {
-        series: "N/A",
-        name: "Les Mis\xe9rables",
-        price: 28,
+        name: "The Pillars of the Earth",
+        series: "",
         category: "historical fiction",
-        src: "./multimedia/LM.jpg"
+        price: 20,
+        src: (0, _tpoteJpgDefault.default)
     },
     {
-        series: "N/A",
-        name: "I, Claudius",
-        price: 22,
+        name: "Outlander",
+        series: "",
         category: "historical fiction",
-        src: "./multimedia/IC.jpg"
+        price: 15,
+        src: (0, _oJpgDefault.default)
+    },
+    {
+        name: "Gone with the Wind",
+        series: "",
+        category: "historical fiction",
+        price: 19,
+        src: (0, _gwtwJpgDefault.default)
     }
 ];
-function displayBooks() {
+function displayBooks(booksToDisplay) {
     const bookList = document.getElementById("book-list");
-    books.forEach((book)=>{
+    bookList.innerHTML = "";
+    booksToDisplay.forEach((book)=>{
         const bookDiv = document.createElement("div");
         bookDiv.className = "container";
-        const n = document.createElement("h4");
-        n.textContent = book.name;
-        const s = document.createElement("h2");
-        s.textContent = book.series;
-        const p = document.createElement("h1");
-        p.textContent = `$${book.price}`;
-        n.style.display = "flex";
-        s.style.display = "flex";
-        p.style.display = "flex";
-        bookDiv.style.display = "flex";
-        bookDiv.appendChild(s);
-        bookDiv.appendChild(n);
-        bookDiv.appendChild(p);
+        const img = document.createElement("img");
+        img.src = book.src;
+        img.alt = book.name;
+        img.style.zIndex = "-1";
+        img.style.width = "220px";
+        img.style.height = "400px";
+        const series = document.createElement("h4");
+        series.textContent = book.series;
+        const name = document.createElement("h2");
+        name.textContent = book.name;
+        const price = document.createElement("h1");
+        price.textContent = `$${book.price}`;
+        const addToCartButton = document.createElement("button");
+        addToCartButton.style.height = "auto";
+        addToCartButton.style.width = "200px";
+        addToCartButton.innerText = "Adaug\u0103 \xeen co\u0219";
+        addToCartButton.onclick = function() {
+            addToCart(book);
+            cartPrice += book.price;
+            console.log(cartPrice);
+        };
+        bookDiv.appendChild(img);
+        bookDiv.appendChild(name);
+        bookDiv.appendChild(series);
+        bookDiv.appendChild(addToCartButton);
+        bookDiv.appendChild(price);
         bookList.appendChild(bookDiv);
     });
 }
-displayBooks();
+function addToCart(book) {
+    cart.push(book);
+    cartPrice += book.price;
+    if (isCartVisible) showCartContents();
+    updateCartUI();
+}
+function updateCartUI() {
+    console.log(cart);
+}
 document.addEventListener("DOMContentLoaded", function() {
+    displayBooks(books);
+    document.getElementById("sort-price-asc").addEventListener("click", function() {
+        sortBooks("price-asc");
+    });
+    document.getElementById("sort-price-desc").addEventListener("click", function() {
+        sortBooks("price-desc");
+    });
+    document.getElementById("sort-name-asc").addEventListener("click", function() {
+        sortBooks("name-asc");
+    });
+    document.getElementById("sort-name-desc").addEventListener("click", function() {
+        sortBooks("name-desc");
+    });
     const filterButtons = document.querySelectorAll("#filter-menu button");
     filterButtons.forEach((button)=>{
         button.addEventListener("click", function() {
             const category = this.getAttribute("data-category");
-            filterBooks(category);
+            const filteredBooks = books.filter((book)=>book.category.toLowerCase() === category.toLowerCase());
+            displayBooks(filteredBooks);
         });
     });
 });
-function filterBooks(category) {
-    const bookList = document.getElementById("book-list");
-    // Curăță lista actuală pentru a afișa doar cărțile filtrate
-    bookList.innerHTML = "";
-    // Filtrare cărți după categorie și afișare
-    books.filter((book)=>book.category.toLowerCase() === category.toLowerCase()).forEach((book)=>{
-        const bookDiv = document.createElement("div");
-        bookDiv.className = "container";
-        const n = document.createElement("h4");
-        n.textContent = book.name;
-        const s = document.createElement("h2");
-        s.textContent = book.series;
-        const p = document.createElement("h1");
-        p.textContent = `$${book.price}`;
-        bookDiv.appendChild(s);
-        bookDiv.appendChild(n);
-        bookDiv.appendChild(p);
-        bookList.appendChild(bookDiv);
+function sortBooks(criteria) {
+    let sortedBooks = [
+        ...books
+    ];
+    switch(criteria){
+        case "price-asc":
+            sortedBooks.sort((a, b)=>a.price - b.price);
+            break;
+        case "price-desc":
+            sortedBooks.sort((a, b)=>b.price - a.price);
+            break;
+        case "name-asc":
+            sortedBooks.sort((a, b)=>a.name.localeCompare(b.name));
+            break;
+        case "name-desc":
+            sortedBooks.sort((a, b)=>b.name.localeCompare(a.name));
+            break;
+    }
+    displayBooks(sortedBooks);
+}
+document.addEventListener("DOMContentLoaded", function() {
+    const homeButton = document.getElementById("home");
+    const filterButtons = document.querySelectorAll("#filter-menu button");
+    const sortButtons = document.querySelectorAll(".sort");
+    const filtre = document.querySelector("#filtre");
+    const categoryButtons = document.querySelectorAll(".category");
+    homeButton.addEventListener("click", function() {
+        displayBooks(books);
+        filterButtons.forEach((button)=>button.classList.remove("button-active"));
+        sortButtons.forEach((button)=>button.classList.remove("button-active"));
+        homeButton.classList.add("button-active");
+        document.querySelector("#filtre").classList.remove("button-active");
     });
+    filtre.addEventListener("click", function() {
+        displayBooks(books);
+        document.querySelector("#home").classList.remove("button-active");
+        filterButtons.forEach((button)=>button.classList.remove("button-active"));
+        sortButtons.forEach((button)=>button.classList.remove("button-active"));
+        filtre.classList.add("button-active");
+    });
+    filterButtons.forEach((button)=>{
+        button.addEventListener("click", function() {
+            const category = this.getAttribute("data-category");
+            const filteredBooks = books.filter((book)=>book.category.toLowerCase() === category.toLowerCase());
+            displayBooks(filteredBooks);
+            filterButtons.forEach((btn)=>btn.classList.remove("button-active"));
+            this.classList.add("button-active");
+            homeButton.classList.remove("button-active");
+        });
+    });
+    sortButtons.forEach((button)=>{
+        button.addEventListener("click", function() {
+            document.getElementById("home").classList.remove("button-active");
+            document.getElementById("filtre").classList.remove("button-active");
+            categoryButtons.forEach((btn)=>btn.classList.remove("button-active"));
+            sortButtons.forEach((btn)=>btn.classList.remove("button-active"));
+            this.classList.add("button-active");
+        });
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const searchInput = document.getElementById("search-input");
+    searchInput.addEventListener("keyup", function() {
+        const searchText = searchInput.value.toLowerCase();
+        const filteredBooks = books.filter((book)=>book.name.toLowerCase().includes(searchText));
+        displayBooks(filteredBooks);
+    });
+});
+document.getElementById("cart").addEventListener("click", showCartContents);
+function removeFromCart(index) {
+    cartPrice -= cart[index].price;
+    cart.splice(index, 1);
+    if (isCartVisible) showCartContents(); // Actualizează dinamic conținutul coșului după eliminare
+    updateCartUI();
+}
+document.getElementById("cart").addEventListener("click", toggleCartContents);
+function toggleCartContents() {
+    const cartContentDiv = document.getElementById("cart-content");
+    if (isCartVisible) {
+        cartContentDiv.innerHTML = "";
+        isCartVisible = false;
+    } else {
+        showCartContents();
+        isCartVisible = true;
+    }
+}
+function showCartContents() {
+    const cartContentDiv = document.getElementById("cart-content");
+    cartContentDiv.innerHTML = "";
+    if (!isCartVisible || cart.length === 0) {
+        cartContentDiv.style.display = "none";
+        return;
+    }
+    cartContentDiv.style.display = "block";
+    let total = 0;
+    cart.forEach((book, index)=>{
+        const bookElement = document.createElement("div");
+        bookElement.innerHTML = `
+            <img src="${book.src}" alt="${book.name}" style="width: 100px; height: 150px;">
+            <p>${book.name}</p>
+            <p>Pre\u{21B}: $${book.price}</p>
+        `;
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        deleteButton.addEventListener("click", function() {
+            removeFromCart(index);
+        });
+        bookElement.appendChild(deleteButton);
+        cartContentDiv.appendChild(bookElement);
+        total += book.price;
+    });
+    const totalElement = document.createElement("div");
+    totalElement.innerHTML = `<h3>Total: $${total}</h3>`;
+    cartContentDiv.appendChild(totalElement);
+}
+function hideCartContents() {
+    const cartContentDiv = document.getElementById("cart-content");
+    cartContentDiv.innerHTML = "";
+    cartContentDiv.style.display = "none";
+}
+function toggleCartContents() {
+    const cartButton = document.getElementById("cart");
+    isCartVisible = !isCartVisible;
+    if (isCartVisible) {
+        showCartContents();
+        cartButton.classList.add("button-active");
+    } else {
+        hideCartContents();
+        cartButton.classList.remove("button-active");
+    }
+}
+function addToCart(book) {
+    cart.push(book);
+    updateCartUI();
+    if (isCartVisible) showCartContents();
 }
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+},{"../multimedia/TLT.jpg":"gmt2F","../multimedia/TLH.jpg":"crZVy","../multimedia/TSOM.jpg":"jogVB","../multimedia/TTC.jpg":"go7cB","../multimedia/TBOTL.jpg":"evxou","../multimedia/TLO.jpg":"573Dw","../multimedia/1984.jpg":"2jqu9","../multimedia/TKAM.jpg":"1hVAb","../multimedia/TSON.jpg":"INxPm","../multimedia/TMOA.jpg":"jU6Vo","../multimedia/THOH.jpg":"h8nte","../multimedia/TGG.jpg":"4pgxu","../multimedia/C22.jpg":"8TLME","../multimedia/TCITR.jpg":"5ZDts","../multimedia/BNN.jpg":"hCRUf","../multimedia/PAP.jpg":"2LI0s","../multimedia/TLOTR.jpg":"kZrB4","../multimedia/B.jpg":"1UlKK","../multimedia/S.jpg":"jyRkE","../multimedia/JE.jpg":"c8iyt","../multimedia/TDOAF.jpg":"lUUk7","../multimedia/ICB.jpg":"4vF8C","../multimedia/BE.jpg":"37SqI","../multimedia/E.jpg":"5cDRc","../multimedia/IT.jpg":"2UyQQ","../multimedia/D.jpg":"992j8","../multimedia/EX.jpg":"eT8pg","../multimedia/F.jpg":"lRPa6","../multimedia/P.jpg":"8szLE","../multimedia/H.jpg":"Jpjo3","../multimedia/BOOK.jpg":"8uM3w","../multimedia/ATLWCS.jpg":"1QuyX","../multimedia/N.jpg":"82b4h","../multimedia/WH.jpg":"1cXXg","../multimedia/TPOTE.jpg":"3Awjc","../multimedia/O.jpg":"7Z8yF","../multimedia/GWTW.jpg":"difFG","../multimedia/SH.jpg":"ajumX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gmt2F":[function(require,module,exports) {
+module.exports = require("7c18c30dc7b1cca4").getBundleURL("bcShh") + "TLT.f2c34d85.jpg" + "?" + Date.now();
+
+},{"7c18c30dc7b1cca4":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"crZVy":[function(require,module,exports) {
+module.exports = require("7a7a7615609ca1f8").getBundleURL("bcShh") + "TLH.bc091c7a.jpg" + "?" + Date.now();
+
+},{"7a7a7615609ca1f8":"lgJ39"}],"jogVB":[function(require,module,exports) {
+module.exports = require("1ff090f4124a5640").getBundleURL("bcShh") + "TSOM.d51a5622.jpg" + "?" + Date.now();
+
+},{"1ff090f4124a5640":"lgJ39"}],"go7cB":[function(require,module,exports) {
+module.exports = require("91ee8c31dfa0991e").getBundleURL("bcShh") + "TTC.4e18e985.jpg" + "?" + Date.now();
+
+},{"91ee8c31dfa0991e":"lgJ39"}],"evxou":[function(require,module,exports) {
+module.exports = require("55ff88301ec96e09").getBundleURL("bcShh") + "TBOTL.fbc8f465.jpg" + "?" + Date.now();
+
+},{"55ff88301ec96e09":"lgJ39"}],"573Dw":[function(require,module,exports) {
+module.exports = require("5ce7b7bf4dca1806").getBundleURL("bcShh") + "TLO.3a7b4522.jpg" + "?" + Date.now();
+
+},{"5ce7b7bf4dca1806":"lgJ39"}],"2jqu9":[function(require,module,exports) {
+module.exports = require("59f3867ffb88fe14").getBundleURL("bcShh") + "1984.2dee35d2.jpg" + "?" + Date.now();
+
+},{"59f3867ffb88fe14":"lgJ39"}],"1hVAb":[function(require,module,exports) {
+module.exports = require("faf7e1fee7283fcd").getBundleURL("bcShh") + "TKAM.9a4133aa.jpg" + "?" + Date.now();
+
+},{"faf7e1fee7283fcd":"lgJ39"}],"INxPm":[function(require,module,exports) {
+module.exports = require("1b2aefc38e7d3425").getBundleURL("bcShh") + "TSON.176fda75.jpg" + "?" + Date.now();
+
+},{"1b2aefc38e7d3425":"lgJ39"}],"jU6Vo":[function(require,module,exports) {
+module.exports = require("a4905ec6f2dcfbe0").getBundleURL("bcShh") + "TMOA.0a465a2d.jpg" + "?" + Date.now();
+
+},{"a4905ec6f2dcfbe0":"lgJ39"}],"h8nte":[function(require,module,exports) {
+module.exports = require("ee3965f3c98a953c").getBundleURL("bcShh") + "THOH.ed3af533.jpg" + "?" + Date.now();
+
+},{"ee3965f3c98a953c":"lgJ39"}],"4pgxu":[function(require,module,exports) {
+module.exports = require("bd2f23a2d43010cf").getBundleURL("bcShh") + "TGG.7908ca4d.jpg" + "?" + Date.now();
+
+},{"bd2f23a2d43010cf":"lgJ39"}],"8TLME":[function(require,module,exports) {
+module.exports = require("981b713b34e457bb").getBundleURL("bcShh") + "C22.049e4fd8.jpg" + "?" + Date.now();
+
+},{"981b713b34e457bb":"lgJ39"}],"5ZDts":[function(require,module,exports) {
+module.exports = require("e15a283b3fe77b69").getBundleURL("bcShh") + "TCITR.3f1e991c.jpg" + "?" + Date.now();
+
+},{"e15a283b3fe77b69":"lgJ39"}],"hCRUf":[function(require,module,exports) {
+module.exports = require("1641eb4c37c55c4f").getBundleURL("bcShh") + "BNN.2f84b1bc.jpg" + "?" + Date.now();
+
+},{"1641eb4c37c55c4f":"lgJ39"}],"2LI0s":[function(require,module,exports) {
+module.exports = require("4c6a856905b30a01").getBundleURL("bcShh") + "PAP.b6a217e2.jpg" + "?" + Date.now();
+
+},{"4c6a856905b30a01":"lgJ39"}],"kZrB4":[function(require,module,exports) {
+module.exports = require("770860f3ed00e56f").getBundleURL("bcShh") + "TLOTR.2f7c65bc.jpg" + "?" + Date.now();
+
+},{"770860f3ed00e56f":"lgJ39"}],"1UlKK":[function(require,module,exports) {
+module.exports = require("cc7c2b7b72cbf2ed").getBundleURL("bcShh") + "B.804dd510.jpg" + "?" + Date.now();
+
+},{"cc7c2b7b72cbf2ed":"lgJ39"}],"jyRkE":[function(require,module,exports) {
+module.exports = require("fb09f1d3e82d6fa2").getBundleURL("bcShh") + "S.e871fc0c.jpg" + "?" + Date.now();
+
+},{"fb09f1d3e82d6fa2":"lgJ39"}],"c8iyt":[function(require,module,exports) {
+module.exports = require("e9d328da69d6277d").getBundleURL("bcShh") + "JE.54561845.jpg" + "?" + Date.now();
+
+},{"e9d328da69d6277d":"lgJ39"}],"lUUk7":[function(require,module,exports) {
+module.exports = require("75c7e2a6e53f4aa3").getBundleURL("bcShh") + "TDOAF.6f176b91.jpg" + "?" + Date.now();
+
+},{"75c7e2a6e53f4aa3":"lgJ39"}],"4vF8C":[function(require,module,exports) {
+module.exports = require("60cfa12018b4e778").getBundleURL("bcShh") + "ICB.e24be2d7.jpg" + "?" + Date.now();
+
+},{"60cfa12018b4e778":"lgJ39"}],"37SqI":[function(require,module,exports) {
+module.exports = require("ed8b88506e9caa23").getBundleURL("bcShh") + "BE.c13ae5fb.jpg" + "?" + Date.now();
+
+},{"ed8b88506e9caa23":"lgJ39"}],"5cDRc":[function(require,module,exports) {
+module.exports = require("9bdc645d7a9ef060").getBundleURL("bcShh") + "E.77a24716.jpg" + "?" + Date.now();
+
+},{"9bdc645d7a9ef060":"lgJ39"}],"2UyQQ":[function(require,module,exports) {
+module.exports = require("f9e604272fa4a9d6").getBundleURL("bcShh") + "IT.d8cef7c7.jpg" + "?" + Date.now();
+
+},{"f9e604272fa4a9d6":"lgJ39"}],"992j8":[function(require,module,exports) {
+module.exports = require("30df0f1e85194b1e").getBundleURL("bcShh") + "D.3007a816.jpg" + "?" + Date.now();
+
+},{"30df0f1e85194b1e":"lgJ39"}],"eT8pg":[function(require,module,exports) {
+module.exports = require("e917027107ecac55").getBundleURL("bcShh") + "EX.a891da96.jpg" + "?" + Date.now();
+
+},{"e917027107ecac55":"lgJ39"}],"lRPa6":[function(require,module,exports) {
+module.exports = require("c2e0342d70addfef").getBundleURL("bcShh") + "F.85b820b3.jpg" + "?" + Date.now();
+
+},{"c2e0342d70addfef":"lgJ39"}],"8szLE":[function(require,module,exports) {
+module.exports = require("e357cad8d0d60873").getBundleURL("bcShh") + "P.c7151621.jpg" + "?" + Date.now();
+
+},{"e357cad8d0d60873":"lgJ39"}],"Jpjo3":[function(require,module,exports) {
+module.exports = require("1effba4537149c79").getBundleURL("bcShh") + "H.be04b180.jpg" + "?" + Date.now();
+
+},{"1effba4537149c79":"lgJ39"}],"8uM3w":[function(require,module,exports) {
+module.exports = require("1d3117068bf860bb").getBundleURL("bcShh") + "BOOK.805a3d04.jpg" + "?" + Date.now();
+
+},{"1d3117068bf860bb":"lgJ39"}],"1QuyX":[function(require,module,exports) {
+module.exports = require("79d3df9bc76a59e1").getBundleURL("bcShh") + "ATLWCS.fdd20a7e.jpg" + "?" + Date.now();
+
+},{"79d3df9bc76a59e1":"lgJ39"}],"82b4h":[function(require,module,exports) {
+module.exports = require("a54b01f92a636871").getBundleURL("bcShh") + "N.30dc084f.jpg" + "?" + Date.now();
+
+},{"a54b01f92a636871":"lgJ39"}],"1cXXg":[function(require,module,exports) {
+module.exports = require("44793e408a4aea03").getBundleURL("bcShh") + "WH.0f394877.jpg" + "?" + Date.now();
+
+},{"44793e408a4aea03":"lgJ39"}],"3Awjc":[function(require,module,exports) {
+module.exports = require("5c7d92edda2cf477").getBundleURL("bcShh") + "TPOTE.32f966bd.jpg" + "?" + Date.now();
+
+},{"5c7d92edda2cf477":"lgJ39"}],"7Z8yF":[function(require,module,exports) {
+module.exports = require("f72767f96a0a88df").getBundleURL("bcShh") + "O.ec338f8d.jpg" + "?" + Date.now();
+
+},{"f72767f96a0a88df":"lgJ39"}],"difFG":[function(require,module,exports) {
+module.exports = require("b60d97a78a98eab4").getBundleURL("bcShh") + "GWTW.ac4d3c10.jpg" + "?" + Date.now();
+
+},{"b60d97a78a98eab4":"lgJ39"}],"ajumX":[function(require,module,exports) {
+module.exports = require("7c5fe8d8588d834").getBundleURL("bcShh") + "SH.b54a1206.jpg" + "?" + Date.now();
+
+},{"7c5fe8d8588d834":"lgJ39"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
